@@ -8,3 +8,18 @@ function displayLight() {
     }
     countLight++; 
 }
+function displayMenu() {
+    let menu = document.querySelector('.lin');
+    if (menu) {
+    
+        if (menu.style.display === "block") {
+            menu.style.display = "none"; 
+        } else {
+            menu.style.display = "block"; 
+            menu.style.gap = "20px ";
+        }
+        
+    } else {
+        console.error("Menu element not found!");
+    }
+}

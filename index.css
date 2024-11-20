@@ -13,6 +13,11 @@
 
 
 }
+.links menu{
+    display: none;
+    justify-content: flex-end;
+
+}
 .light button{
     top: 0;
     right: 0;
@@ -233,4 +238,11 @@ form .btn:hover{
 .social-media a{
     font-size: 30px;
     color: rgb(6, 153, 6) ;
+}
+@media  screen and (max-width:750px) {
+    .contact-message form input,
+.contact-message form textarea{
+    width: 100%;
+}
+    
 }
