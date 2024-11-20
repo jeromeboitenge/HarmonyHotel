@@ -6,9 +6,10 @@
 body{
     font: 1.2rem "Nunito", sans-serif;
     min-height: 100vh;
-    /* background-color: #454545; */
+    background-color: #454545;
     /* background-image: radial-gradient(whitesmoke, #454545); */
     display: flex;
+    /* background: #333131; */
     flex-direction: column;
 }
 
@@ -83,7 +84,7 @@ margin-bottom: 40px;
 
 }
 .services-list  img:hover{
-    width:max(300px, 110%); 
+    width:max(300px, 100%); 
     height: 280px;
 }
 
@@ -123,4 +124,38 @@ margin-bottom: 40px;
     margin-top: 15px;
     display: inline-block;
 }
+i{
+    color: rgb(6, 153, 6);
+}
+.contacts-list{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+.contact-calls{
+    display: block;
+    flex-basis: 50%;
+}
+.contact-message{
+    display: block;
+    flex-basis: 50%;
+    width: 100%;
+    
+}
+.contact-message form input,
+.contact-message form textarea{
+    background-color: #4545450a;
+    
+    margin-bottom: 20px;
+    width: 80%;
+    border-radius: 8px;
+}
+.contact-message form input{
+    height: 40px;
+}
+.contact-message form 
+textarea{
 
+}
