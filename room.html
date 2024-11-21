@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmony Star Palace - Room Booking</title>
+    <link rel="stylesheet" href="rooms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="hotel-logo.png" alt="Harmony Star Palace Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="rooms.html" class="active"><i class="fas fa-bed"></i> Rooms</a></li>
+                <li><a href="amenities.html"><i class="fas fa-concierge-bell"></i> Amenities</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="rooms-header">
+            <h1>Discover Our Rooms</h1>
+            <p>Experience luxury and comfort at Harmony Star Palace</p>
+        </section>
+
+        <div class="rooms-booking-wrapper">
+            <section id="rooms-container" class="rooms-grid">
+                <!-- Rooms will be dynamically loaded here -->
+            </section>
+
+            <aside class="booking-sidebar">
+                <div class="cart-section">
+                    <h2><i class="fas fa-shopping-cart"></i> Booking Cart</h2>
+                    <ul id="cart-items"></ul>
+                    <div class="cart-summary">
+                        <p>Total: $<span id="cart-total">0</span></p>
+                    </div>
+
+                    <form id="booking-form">
+                        <h3>Personal Details</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="full-name"><i class="fas fa-user"></i> Full Name</label>
+                                <input type="text" id="full-name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone"><i class="fas fa-phone"></i> Phone</label>
+                                <input type="tel" id="phone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="check-in"><i class="fas fa-calendar-alt"></i> Check-in</label>
+                                <input type="date" id="check-in" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="check-out"><i class="fas fa-calendar-alt"></i> Check-out</label>
+                                <input type="date" id="check-out" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group special-requests">
+                            <label for="requests"><i class="fas fa-comment"></i> Special Requests</label>
+                            <textarea id="requests" placeholder="Any special requirements?"></textarea>
+                        </div>
+
+                        <div id="booking-details">
+                            <!-- Dynamically populated booking details -->
+                        </div>
+
+                        <button type="submit" class="btn-book">
+                            <i class="fas fa-check-circle"></i> Confirm Booking
+                        </button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h4><i class="fas fa-map-marker-alt"></i> Harmony Star Palace</h4>
+                <p>123 Luxury Lane, Elegant City</p>
+                <p>Phone: +1 (555) 123-4567</p>
+                <p>Email: reservations@harmonystar.com</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+            
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2024 Harmony Star Palace. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="rooms.js"></script>
+</body>
+</html>
